@@ -87,7 +87,7 @@ const Header = ({ isSticky }: { isSticky: boolean }) => {
 
   const [headerBarIndex, setHeaderBarIndex] = useState<number>(-1);
   const [openLangModal, setOpenLangModal] = useState<boolean>(false);
-  const [openSideNavBar, setOpenSideNav] = useState<boolean>(true);
+  const [openSideNavBar, setOpenSideNav] = useState<boolean>(false);
 
   return (
     <React.Fragment>
