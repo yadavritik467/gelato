@@ -177,7 +177,7 @@ const Header = ({ isSticky }: { isSticky: boolean }) => {
         {/* header bar navigation array */}
         <div className="w-full px-24 hidden lg:flex h-[50px] shadow-sm">
           {headerBarIndex > -1 ? (
-            <div className="fixed w-full bg-black left-0 top-[23%] bg-opacity-25 h-[85vh]"></div>
+            <div className={`fixed w-full bg-black left-0 ${isSticky ? 'top-[15%]':'top-[23%]'}  bg-opacity-25 h-[85vh]`}></div>
           ) : null}
 
           {headerBarNavigationArray?.map((sd, i) => (
